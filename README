@@ -3,3 +3,26 @@ module.  Documentation for the implementation is in doc/.
 
 See INSTALL for (generic) installation instructions for C++: basically
    ./autogen.sh && ./configure && make && make install
+
+
+
+测试环境ubuntu 16.04：
+1 install lib:
+sudo apt install libgoogle-glog-devy 
+2 modify file path: 
+GLOG_log_dir=/some/path
+3 example:
+
+#include <glog/logging.h>
+ 
+int main(int argc, char* argv[])
+{
+    google::InitGoogleLogging(argv[0]);
+ 
+    LOG(INFO) << "This is an info  message";
+    LOG(WARNING) << "This is a warning message";
+    LOG(ERROR) << "This is an error message";
+    LOG(FATAL) << "This is a fatal message";
+ 
+    return 0;
+}
