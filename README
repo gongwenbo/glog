@@ -5,7 +5,7 @@ See INSTALL for (generic) installation instructions for C++: basically
    ./autogen.sh && ./configure && make && make install
 
 
-
+channel:https://codeyarns.com/2017/10/26/how-to-install-and-use-glog/
 测试环境ubuntu 16.04：
 1 install lib:
 sudo apt install libgoogle-glog-devy 
